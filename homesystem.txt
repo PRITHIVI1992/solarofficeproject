@@ -1,0 +1,59 @@
+<!------------------------------------------                         HOMESYSTEM DESIGN.                      ------------------------------->
+<P9>HOME SYSTEM DESIGN</P9><br><br><br><br>
+<p3>
+Input the number of APPLIANCES used in your home <br>
+<br>
+<br>
+Lamps<br><input type="text" id="lamp">
+<br>
+tubelights<br><input type="text" id="tubelight">
+<br>
+colour TV<br><input type="text" id="colourTV">
+<br>
+LED TV<br><input type="text" id="LEDTV">
+<br>
+Fridge<br><input type="text" id="Fridge">
+<br>
+Ceiling Fan<br><input type="text" id="CeilingFan">
+<br>
+DesktopComputer<br><input type="text" id="DesktopsComputer">
+<br>
+HomeInternetRouter<br><input type="text" id="HomeInternetRouter">
+<br>
+LaptopComputer<br><input type="text" id="LaptopComputer">
+<br>
+<button onclick="calculate()">calculate</button>
+<br>
+Size of Solar Home System required is <p5 id="insert2"></p5> Watt
+
+                            <script >
+var a;   
+var b;    
+var c;    
+var d;   
+var e;    
+var f;    
+var g;     
+var h;      
+var i;     
+var j;
+
+function calculate()
+{
+a= document.getElementById("lamp").value;
+b= document.getElementById("tubelight").value;
+c= document.getElementById("colourTV").value;
+d= document.getElementById("LEDTV").value;
+e= document.getElementById("Fridge").value;
+f= document.getElementById("CeilingFan").value;
+g= document.getElementById("DesktopsComputer").value;
+h= document.getElementById("HomeInternetRouter").value;
+i= document.getElementById("LaptopComputer").value;
+j =a*5+b*20+c*100*0.5+d*60*0.5+e*120+f*50+g*200*0.5+h*10+i*70*0.5;
+document.getElementById("insert2").innerHTML = j;
+}
+                           </script><br>
+
+</p3>
+<br>
+<br>
